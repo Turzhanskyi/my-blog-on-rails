@@ -129,6 +129,11 @@ Layout/DotPosition:
   - leading
   - trailing
 
+Style/Documentation:
+  Include:
+    - app/models/**/*
+    - lib/**/*
+
 Style/EmptyElse:
   EnforcedStyle: both
   SupportedStyles:
