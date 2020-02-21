@@ -36,6 +36,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'bootstrap', '~> 4.4.1'
+gem 'carrierwave', '~> 2.0'
+gem 'mini_magick'
 gem 'rails-assets-tether', '~> 1.1', '>= 1.1.1'
 
 group :development, :test do
