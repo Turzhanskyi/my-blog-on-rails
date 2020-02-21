@@ -22,3 +22,8 @@ uk:
         "%{action} допис"
       confirm:
         "Ви впевнені?"
+
+  tags:
+    show:
+      title: "Дописів немає"
+

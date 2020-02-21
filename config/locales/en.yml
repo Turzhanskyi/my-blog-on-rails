@@ -22,5 +22,7 @@ en:
         '%{action} post'
       confirm: "Are you sure?"
 
-
+  tags:
+    show:
+      title: "No posts"
 
