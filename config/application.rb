@@ -20,12 +20,10 @@ Bundler.require(*Rails.groups)
 
 module MyBlogOnRails
   class Application < Rails::Application
-    config.i18n.default_locale = :uk
     config.time_zone = 'Kyiv'
+    config.i18n.default_locale = :uk
+
     config.exceptions_app = routes
     config.active_record.belongs_to_required_by_default = true
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
   end
 end

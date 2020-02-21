@@ -1,2 +1,24 @@
 uk:
-  hello: "Привіт"
+  common:
+    errors: "При заповнені форми виникли помилки:"
+    back: "Назад"
+    create: "Створити"
+    change: "Змінити"
+    delete: "Видалити"
+
+  layouts:
+    posts: "Усі дописи"
+    contacts: "Контакти"
+
+  posts:
+    index:
+      title: "Дописи"
+    new:
+      title: "Новий допис"
+    edit:
+      title: "Редагувати допис"
+    form:
+      submit:
+        "%{action} допис"
+      confirm:
+        "Ви впевнені?"

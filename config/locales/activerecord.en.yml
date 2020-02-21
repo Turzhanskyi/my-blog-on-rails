@@ -1,0 +1,17 @@
+en:
+  activerecord:
+    models:
+      post: "Posts"
+    attributes:
+      post:
+        title: "Title"
+        summary: "Summary"
+        body: "Content of post"
+
+    errors:
+      messages:
+        blank: "- can't be blank"
+        record_invalid: "Errors occurred: %{errors}"
+        restrict_dependent_destroy:
+          has_one: "Unable to delete record because dependency exists: %{record}"
+          has_many: "Unable to delete record because dependencies exist: %{record}"
