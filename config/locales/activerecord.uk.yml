@@ -1,0 +1,17 @@
+uk:
+  activerecord:
+    models:
+      post: 'Стаття'
+    attributes:
+      post:
+        title: 'Назва'
+        summary: 'Анотація'
+        body: 'Зміст статті'
+
+    errors:
+      messages:
+        blank: '- поле не може бути пустим'
+        record_invalid: "Виникли помилки: %{errors}"
+        restrict_dependent_destroy:
+          has_one: "Неможливо видалити запис, так як існує залежність: %{record}"
+          has_many: "Неможливо видалити запис, так як існують залежності: %{record}"
