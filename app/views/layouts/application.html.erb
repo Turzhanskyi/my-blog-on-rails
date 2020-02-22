@@ -20,7 +20,7 @@
               <a class="nav-link" href="#"><%= t("layouts.contacts") %> </a>
             </li>
           </ul>
-          <%= link_to t("posts.new.title"), new_post_path, class: "btn btn-outline-primary pull-xs-right" %>
+          <%= link_to t("posts.new.title" ), new_post_path, class: "btn btn-outline-primary pull-xs-right" %>
         </div>
       </nav>
     </div>
@@ -39,9 +39,12 @@
           <%= yield %>
         </div>
         <div class="col-md-3">
-          <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5}) do |tag, css_class| %>
-            <%= link_to tag.name, tag_path(tag.name), class: css_class %>
-          <% end %>
+          <%= render "shared/submenu" %>
+          <div class="tag_cloud">
+            <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5}) do |tag, css_class| %>
+              <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>
