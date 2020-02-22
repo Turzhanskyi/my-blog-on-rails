@@ -7,6 +7,9 @@ uk:
         title: "Назва"
         summary: "Анотація"
         body: "Зміст допису"
+        all_tags: "Теги"
+        category_id: "Категорія"
+        category: "Категорія"
       category:
         name: "Назва"
         parent_id: "Категорія батьківська"
