@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :posts
   resources :pictures, only: %i[create destroy]
   resources :tags, only: [:show]
+  resources :categories
 end

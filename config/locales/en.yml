@@ -22,6 +22,22 @@ en:
         '%{action} post'
       confirm: "Are you sure?"
 
+  categories:
+    index:
+      title: "Categories"
+      table:
+        th1: "#"
+        th2: "Name"
+        th3: "Operation"
+    new:
+      title: "New category"
+    edit:
+      title: "Edit category"
+    form:
+      submit:
+        '%{action} category'
+      confirm: "Are you sure?"
+
   tags:
     show:
       title: "No posts"

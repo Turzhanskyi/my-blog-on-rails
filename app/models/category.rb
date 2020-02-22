@@ -2,15 +2,15 @@
 
 # == Schema Information
 #
-# Table name: pictures
+# Table name: categories
 #
 #  id         :integer          not null, primary key
-#  image      :string
+#  name       :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
-require 'rails_helper'
+class Category < ApplicationRecord
+  has_many :posts
 
-RSpec.describe Picture, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  validates :name, presence: true
 end

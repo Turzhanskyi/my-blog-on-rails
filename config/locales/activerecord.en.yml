@@ -8,6 +8,8 @@ en:
         summary: "Summary"
         body: "Content of post"
         all_tags: "All tags"
+      category:
+        name: "Name"
 
     errors:
       messages:
@@ -16,6 +18,3 @@ en:
         restrict_dependent_destroy:
           has_one: "Unable to delete record because dependency exists: %{record}"
           has_many: "Unable to delete record because dependencies exist: %{record}"
-  tags:
-    show:
-      title: ""

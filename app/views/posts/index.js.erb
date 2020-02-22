@@ -1,8 +1,8 @@
-$('#posts').append("<%= j render(partial: 'delimeter') %>");
-$('#posts').append("<%= j render(@posts) %>");
+$("#posts").append("<%= j render(partial: "delimeter") %>");
+$("#posts").append("<%= j render(@posts) %>");
 
 <% if @posts.next_page %>
-  $('.pagination').replaceWith("<%= j  will_paginate(@posts, renderer: 'BootstrapPaginationHelper::LinkRenderer') %>");
+  $(".pagination").replaceWith("<%= j  will_paginate(@posts, renderer: "BootstrapPaginationHelper::LinkRenderer") %>");
 <% else %>
-  $('.pagination').remove();
+  $(".pagination").remove();
 <% end %>

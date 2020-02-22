@@ -1,8 +1,8 @@
-<% if @post.errors.any? %>
+<% if @category.errors.any? %>
   <div id="error_explanation" class="alert alert-danger">
     <h5><%= t("common.errors") %></h5>
     <ul>
-      <% @post.errors.full_messages.each do |msg| %>
+      <% @category .errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
     </ul>
