@@ -40,6 +40,8 @@ en:
       confirm: "Are you sure?"
 
   tags:
+    index:
+      title: "Tags"
     show:
       title: "No posts"
 

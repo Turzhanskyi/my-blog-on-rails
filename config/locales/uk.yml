@@ -46,6 +46,8 @@ uk:
         "Ви впевнені?"
 
   tags:
+    index:
+      title: "Теги"
     show:
       title: "Дописів немає"
 
