@@ -6,6 +6,10 @@ uk:
     change: "Змінити"
     delete: "Видалити"
 
+  will_paginate:
+    previous_label: "&larr; Вперед"
+    next_label: "Назад &rarr;"
+
   layouts:
     posts: "Усі дописи"
     contacts: "Контакти"
