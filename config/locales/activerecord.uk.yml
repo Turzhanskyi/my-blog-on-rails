@@ -9,6 +9,7 @@ uk:
         body: "Зміст допису"
       category:
         name: "Назва"
+        parent_id: "Категорія батьківська"
 
     errors:
       messages:

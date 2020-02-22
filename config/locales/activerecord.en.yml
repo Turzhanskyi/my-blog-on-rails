@@ -10,6 +10,7 @@ en:
         all_tags: "All tags"
       category:
         name: "Name"
+        parent_id: "Parent category"
 
     errors:
       messages:

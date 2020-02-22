@@ -28,7 +28,8 @@ en:
       table:
         th1: "#"
         th2: "Name"
-        th3: "Operation"
+        th3: "Parent category"
+        th4: "Operation"
     new:
       title: "New category"
     edit:
