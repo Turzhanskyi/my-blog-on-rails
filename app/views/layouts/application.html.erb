@@ -13,12 +13,14 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="<%= posts_path %>"><%= t("layouts.posts") %><span class="sr-only">(current)</span></a>
+            <li class="nav-item <%= "active" if current_page?(root_path) || current_page?(posts_path) %>">
+              <%= link_to t("posts.index.title"), root_path, class: "btn btn-outline-primary pull-xs-left" %>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><%= t("layouts.contacts") %> </a>
-            </li>
+            <% Category.order(:name).roots.each do |category| %>
+              <li class="nav-item <%= "active" if current_page?(category_path(category)) %>">
+                <%= link_to category.name, category, class: "btn btn-light" %>
+              </li>
+            <% end %>
           </ul>
           <%= link_to t("posts.new.title" ), new_post_path, class: "btn btn-outline-primary pull-xs-right" %>
         </div>
@@ -41,7 +43,7 @@
         <div class="col-md-3">
           <%= render "shared/submenu" %>
           <div class="tag_cloud">
-            <h2><%= t('tags.index.title') %></h2>
+            <h2><%= t("tags.index.title") %></h2>
             <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5}) do |tag, css_class| %>
               <%= link_to tag.name, tag_path(tag.name), class: css_class %>
             <% end %>

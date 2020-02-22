@@ -6,20 +6,16 @@ en:
     change: "Change"
     delete: "Delete"
 
-  layouts:
-    contacts: "Contacts"
-    posts: "All posts"
-
   posts:
     index:
-      title: "Posts"
+      title: "All posts"
     new:
       title: "New post"
     edit:
       title: "Edit post"
     form:
       submit:
-        '%{action} post'
+        "%{action} post"
       confirm: "Are you sure?"
 
   categories:
@@ -36,7 +32,7 @@ en:
       title: "Edit category"
     form:
       submit:
-        '%{action} category'
+        "%{action} category"
       confirm: "Are you sure?"
 
   tags:

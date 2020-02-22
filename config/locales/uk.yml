@@ -10,13 +10,9 @@ uk:
     previous_label: "&larr; Вперед"
     next_label: "Назад &rarr;"
 
-  layouts:
-    posts: "Усі дописи"
-    contacts: "Контакти"
-
   posts:
     index:
-      title: "Дописи"
+      title: "Усі дописи"
     new:
       title: "Новий допис"
     edit:
