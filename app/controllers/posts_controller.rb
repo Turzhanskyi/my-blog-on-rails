@@ -18,7 +18,8 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to @post, success: 'Допис успішно створено'
     else
-      render :new, danger: 'Допис не створено'
+      flash.now[:danger] = 'Допис не створено'
+      render :new
     end
   end
 
@@ -28,7 +29,8 @@ class PostsController < ApplicationController
     if @post.update(post_params)
       redirect_to @post, success: 'Допис успішно оновлено'
     else
-      render :edit, danger: 'Допис не оновлено'
+      flash.now[:danger] = 'Допис не оновлено'
+      render :edit
     end
   end
 
