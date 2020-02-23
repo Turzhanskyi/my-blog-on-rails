@@ -21,3 +21,42 @@ uk:
         restrict_dependent_destroy:
           has_one: "Неможливо видалити запис, так як існує залежність: %{record}"
           has_many: "Неможливо видалити запис, так як існують залежності: %{record}"
+  devise:
+    registrations:
+      new:
+        sign_up: "Реєстрація"
+      edit:
+        currently_waiting_confirmation_for_email: "Зараз чекає підтвердження на електронну пошту"
+        leave_blank_if_you_don_t_want_to_change_it: "Залиште порожнє, якщо ви не хочете його змінювати"
+        we_need_your_current_password_to_confirm_your_changes: "Для підтвердження змін нам потрібен ваш поточний пароль"
+        update: "Оновити"
+        cancel_my_account: "Скасувати мій обліковий запис"
+        unhappy: "Невдала спроба"
+    shared:
+      minimum_password_length: "Мінімальна довжина пароля"
+      links:
+        back: "Назад"
+        sign_in: "Увійти"
+        sign_up: "Реєстрація"
+        forgot_your_password: "Забули свій пароль"
+        didn_t_receive_confirmation_instructions: "Не отримано інструкцій підтвердження"
+        didn_t_receive_unlock_instructions: "Не отримали інструкцій щодо розблокування"
+        sign_in_with_provider: "Увійти через провайдера"
+    confirmations:
+      new:
+        resend_confirmation_instructions: "Повторно подати підтвердження"
+    passwords:
+      edit:
+        new_password: "Новий пароль"
+        change_your_password: "Змінити пароль"
+        confirm_new_password: "Підтвердити новий пароль"
+        change_my_password: "Змінити пароль"
+      new:
+        forgot_your_password: "Забули свій пароль"
+        send_me_reset_password_instructions: "Надішліть мені інструкції щодо скидання пароля"
+    sessions:
+      new:
+        sign_in: "Увійти"
+    unlocks:
+      new:
+        resend_unlock_instructions: "Повторіть інструкції щодо розблокування"

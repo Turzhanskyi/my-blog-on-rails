@@ -38,6 +38,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'ancestry'
 gem 'bootstrap', '~> 4.4.1'
 gem 'carrierwave', '~> 2.0'
+gem 'devise'
+gem 'devise-bootstrap-views', '~> 1.0'
+gem 'devise-i18n'
 gem 'mini_magick'
 gem 'rails-assets-tether', '~> 1.1', '>= 1.1.1'
 gem 'trix', '~> 0.11.1'
@@ -55,6 +58,7 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'annotate'
+  gem 'letter_opener'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end

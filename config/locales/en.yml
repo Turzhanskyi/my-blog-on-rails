@@ -6,6 +6,12 @@ en:
     change: "Change"
     delete: "Delete"
 
+  layouts:
+    header:
+      log_in: "LogIn"
+      log_out: "LogOut"
+      registration: "Registration"
+
   posts:
     index:
       title: "All posts"

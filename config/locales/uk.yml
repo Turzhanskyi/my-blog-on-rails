@@ -6,6 +6,12 @@ uk:
     change: "Змінити"
     delete: "Видалити"
 
+  layouts:
+    header:
+      log_in: "Вхід"
+      log_out: "Вихід"
+      registration: "Реєстрація"
+
   will_paginate:
     previous_label: "&larr; Вперед"
     next_label: "Назад &rarr;"
