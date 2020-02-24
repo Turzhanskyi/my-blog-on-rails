@@ -5,12 +5,12 @@ Rails.application.routes.draw do
   root 'posts#index'
 
   resources :posts, only: %i[show index]
-  resources :pictures, only: %i[create destroy]
   resources :tags, only: [:show]
   resources :categories, only: [:show]
 
   namespace :admin do
     resources :posts, except: %i[show index]
     resources :categories, except: [:show]
+    resources :pictures, only: %i[create destroy]
   end
 end
