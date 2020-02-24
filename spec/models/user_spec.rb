@@ -5,6 +5,7 @@
 # Table name: users
 #
 #  id                     :integer          not null, primary key
+#  admin                  :boolean          default("false")
 #  confirmation_sent_at   :datetime
 #  confirmation_token     :string
 #  confirmed_at           :datetime

@@ -29,23 +29,24 @@ uk:
       confirm:
         "Ви впевнені?"
 
-  categories:
-    index:
-      title: "Категорії"
-      table:
-        th1: "№"
-        th2: "Назва"
-        th3: "Батьківська категорія"
-        th4: "Операції"
-    new:
-      title: "Нова категорія"
-    edit:
-      title: "Редагувати категорію"
-    form:
-      submit:
-        "%{action} категорію"
-      confirm:
-        "Ви впевнені?"
+  admin:
+    categories:
+      index:
+        title: "Категорії"
+        table:
+          th1: "№"
+          th2: "Назва"
+          th3: "Батьківська категорія"
+          th4: "Операції"
+      new:
+        title: "Нова категорія"
+      edit:
+        title: "Редагувати категорію"
+      form:
+        submit:
+          "%{action} категорію"
+        confirm:
+          "Ви впевнені?"
 
   tags:
     index:

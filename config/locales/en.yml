@@ -24,22 +24,23 @@ en:
         "%{action} post"
       confirm: "Are you sure?"
 
-  categories:
-    index:
-      title: "Categories"
-      table:
-        th1: "#"
-        th2: "Name"
-        th3: "Parent category"
-        th4: "Operation"
-    new:
-      title: "New category"
-    edit:
-      title: "Edit category"
-    form:
-      submit:
-        "%{action} category"
-      confirm: "Are you sure?"
+  admin:
+    categories:
+      index:
+        title: "Categories"
+        table:
+          th1: "#"
+          th2: "Name"
+          th3: "Parent category"
+          th4: "Operation"
+      new:
+        title: "New category"
+      edit:
+        title: "Edit category"
+      form:
+        submit:
+          "%{action} category"
+        confirm: "Are you sure?"
 
   tags:
     index:
