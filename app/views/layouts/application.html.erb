@@ -21,7 +21,7 @@
                 <%= link_to category.name, category, class: "btn btn-light" %>
               </li>
             <% end %>
-            <%= link_to t("posts.new.title" ), new_post_path, class: "btn btn-outline-primary pull-xs-right" %>
+            <%= link_to t("admin.posts.new.title" ), new_admin_post_path, class: "btn btn-outline-primary pull-xs-right" %>
           </ul>
           <ul class="navbar-nav pull-xs-right">
             <% if user_signed_in? %>

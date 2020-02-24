@@ -13,9 +13,9 @@ en:
       category:
         name: "Name"
         parent_id: "Parent category"
-
     errors:
       messages:
+        required: "required"
         blank: "- can't be blank"
         record_invalid: "Errors occurred: %{errors}"
         restrict_dependent_destroy:

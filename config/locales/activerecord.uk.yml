@@ -13,9 +13,9 @@ uk:
       category:
         name: "Назва"
         parent_id: "Категорія батьківська"
-
     errors:
       messages:
+        required: "- поле не повино бути пустим"
         blank: "- поле не може бути пустим"
         record_invalid: "Виникли помилки: %{errors}"
         restrict_dependent_destroy:

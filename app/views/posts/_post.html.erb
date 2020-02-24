@@ -9,9 +9,9 @@
       <% end %>
       <% if user_signed_in? %>
         |
-        <%= link_to t('common.change'), edit_post_path(post) %>
+        <%= link_to t('common.change'), edit_admin_post_path(post) %>
         |
-        <%= link_to t('common.delete'), post_path(post), method: :delete, data: { confirm: t('posts.form.confirm') } %>
+        <%= link_to t('common.delete'), admin_post_path(post), method: :delete, data: { confirm: t('admin.posts.form.confirm') } %>
       <% end %>
     </small>
   </section>

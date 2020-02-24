@@ -19,17 +19,18 @@ uk:
   posts:
     index:
       title: "Усі дописи"
-    new:
-      title: "Новий допис"
-    edit:
-      title: "Редагувати допис"
-    form:
-      submit:
-        "%{action} допис"
-      confirm:
-        "Ви впевнені?"
 
   admin:
+    posts:
+      new:
+        title: "Новий допис"
+      edit:
+        title: "Редагувати допис"
+      form:
+        submit:
+          "%{action} допис"
+        confirm:
+          "Ви впевнені?"
     categories:
       index:
         title: "Категорії"

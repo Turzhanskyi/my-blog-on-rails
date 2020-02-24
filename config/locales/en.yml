@@ -15,16 +15,17 @@ en:
   posts:
     index:
       title: "All posts"
-    new:
-      title: "New post"
-    edit:
-      title: "Edit post"
-    form:
-      submit:
-        "%{action} post"
-      confirm: "Are you sure?"
 
   admin:
+    posts:
+      new:
+        title: "New post"
+      edit:
+        title: "Edit post"
+      form:
+        submit:
+          "%{action} post"
+        confirm: "Are you sure?"
     categories:
       index:
         title: "Categories"
