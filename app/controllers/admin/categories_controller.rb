@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-class Admin::CategoriesController < ApplicationController
-  before_action :authenticate_user!
+class Admin::CategoriesController < Admin::AdminController
   before_action :set_category, only: %i[edit update destroy]
 
   def index

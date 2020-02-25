@@ -17,6 +17,7 @@ en:
       title: "All posts"
 
   admin:
+    panel: "Admin panel"
     posts:
       new:
         title: "New post"

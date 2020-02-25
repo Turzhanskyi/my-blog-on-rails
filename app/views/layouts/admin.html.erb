@@ -10,9 +10,10 @@
 
   <body>
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: lightskyblue;">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><%= t("admin.panel") %></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="row navbar-nav">
+          <ul class="row navbar-nav mr-auto">
             <li class="nav-item <%= "active" if current_page?(root_path) || current_page?(posts_path) %>">
               <%= link_to t("posts.index.title"), root_path, class: "btn btn-outline-primary pull-xs-left main_header_nav" %>
             </li>

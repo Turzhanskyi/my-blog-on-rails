@@ -33,7 +33,7 @@ uk:
         cancel_my_account: "Скасувати мій обліковий запис"
         unhappy: "Невдала спроба"
     shared:
-      minimum_password_length: "Мінімальна довжина пароля"
+      minimum_password_length: "8 символів - мінімальна довжина пароля"
       links:
         back: "Назад"
         sign_in: "Увійти"

@@ -21,6 +21,7 @@ uk:
       title: "Усі дописи"
 
   admin:
+    panel: "Адміністративна панель"
     posts:
       new:
         title: "Новий допис"

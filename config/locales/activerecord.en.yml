@@ -33,7 +33,7 @@ en:
         cancel_my_account: "Cancel my account"
         unhappy: "Unhappy"
     shared:
-      minimum_password_length: "Minimum password length"
+      minimum_password_length: "Minimum password length - 8"
       links:
         back: "Back"
         sign_in: "Sign in"
