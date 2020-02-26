@@ -10,40 +10,63 @@
 
   <body>
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: lightskyblue;">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="row navbar-nav">
-            <li class="nav-item <%= "active" if current_page?(root_path) || current_page?(posts_path) %>">
-              <%= link_to t("posts.index.title"), root_path, class: "btn btn-outline-primary pull-xs-left main_header_nav" %>
-            </li>
-            <% Category.order(:name).roots.each do |category| %>
-              <li class="nav-item <%= "active" if current_page?(category_path(category)) %>">
-                <%= link_to category.name, category, class: "btn btn-outline-info main_header_nav" %>
-              </li>
-            <% end %>
-            <% if user_signed_in? && current_user.admin? %>
-              <%= link_to t("admin.posts.new.title" ), new_admin_post_path, class: "btn btn-outline-primary pull-xs-right main_header_nav" %>
-            <% end %>
-          </ul>
-          <ul class="navbar-nav pull-xs-right">
-            <% if user_signed_in? %>
-              <li class="nav-item">
-                <%= link_to t("layouts.header.log_out"), destroy_user_session_path, method: :delete,
-                            class: "btn btn-outline-secondary pull-xs-right" %>
-              </li>
-            <% else %>
-              <li class="nav-item">
-                <%= link_to t("layouts.header.log_in"), new_user_session_path,
-                            class: "btn btn-outline-secondary pull-xs-right" %>
-              </li>
-              <li class="nav-item">
-                <%= link_to t("layouts.header.registration"), new_user_registration_path, class: "nav-link" %>
-              </li>
-            <% end %>
-          </ul>
+      <!-- Start header Menu Area -->
+      <header id="header" class="header_area">
+        <div class="main_menu">
+          <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: lightskyblue;">
+            <div class="container">
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+                  <% if user_signed_in? && current_user.admin? %>
+                    <%= link_to t("admin.posts.new.title" ), new_admin_post_path, class: "btn btn-outline-primary pull-xs-right" %>
+                  <% end %>
+                </ul>
+                <ul class="nav navbar-nav menu_nav ">
+                  <li class="nav-item <%= "active" if current_page?(root_path) || current_page?(posts_path) %>">
+                    <%= link_to t("posts.index.title"), root_path, class: "nav-link" %>
+                  </li>
+                  <% Category.order(:name).roots.each do |category| %>
+                    <li class="nav-item <%= "active" if current_page?(category_path(category)) %>">
+                      <%= link_to category.name, category, class: "nav-link" %>
+                    </li>
+                  <% end %>
+                </ul>
+                <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+                  <li class="nav-item submenu dropdown">
+                    <a href="#" class="btn btn-outline-secondary right-button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      <% if user_signed_in? %>
+                        <%= t("layouts.header.log_out") %>
+                      <% else %>
+                        <%= t("layouts.header.log_in") %>
+                      <% end %>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <% if user_signed_in? %>
+                        <li class="nav-item">
+                          <%= link_to t("layouts.header.log_out"), destroy_user_session_path, method: :delete,
+                                      class: "nav-link" %>
+                        </li>
+                      <% else %>
+                        <li class="nav-item">
+                          <%= link_to t("layouts.header.log_in"), new_user_session_path,
+                                      class: "nav-link" %>
+                        </li>
+                        <li class="nav-item">
+                          <%= link_to t("layouts.header.registration"), new_user_registration_path, class: "nav-link" %>
+                        </li>
+                      <% end %>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
+      </header>
+      <!-- End header MEnu Area -->
     </div>
+
     <div class="container main">
       <div class="row">
         <div class="col-md-12">
