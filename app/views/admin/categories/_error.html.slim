@@ -1,0 +1,8 @@
+- if @category.errors.any?
+  #error_explanation.alert.alert-danger
+    h5
+      = t("common.errors")
+    ul
+      - @category .errors.full_messages.each do |msg|
+        li
+          = msg
