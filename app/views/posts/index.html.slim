@@ -1,0 +1,5 @@
+h1
+  = t(".title")
+section#posts
+  = render @posts
+= will_paginate @posts, renderer: "BootstrapPaginationHelper::LinkRenderer"

@@ -1,0 +1,20 @@
+article.post
+  section.post-head
+    h2
+      = link_to post.title, post_path(post)
+    small
+      time
+        = post.created_at.to_date.strftime('%d %B, %Y')
+      - if post.category.present?
+        |  |
+        = link_to post.category.name, post.category
+      - if user_signed_in? && current_user.admin?
+        |  |
+        = link_to t('common.change'), edit_admin_post_path(post)
+        |  |
+        = link_to t('common.delete'), admin_post_path(post), method: :delete, data: { confirm: t('admin.posts.form.confirm') }
+  section.post-summary.clearfix
+    = image_tag post.image.url(:thumb), class: 'img-thumbnail thumb' if post.image?
+    = post.summary
+  section.footer-summary
+    = raw post.tags.map(&:name).map{ |t| link_to t, tag_path(t), class: "btn btn-primary btn-sm" }.join(' ')
